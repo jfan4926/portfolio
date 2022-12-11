@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Theme Made By www.w3schools.com - No Copyright -->
     <title>Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +13,20 @@
 </head>
 
 <body>
+    <!-- side nav -->
+    <!-- https://www.w3schools.com/howto/howto_js_sidenav.asp -->
 
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <b><a href="#context">Context and Purpose</a></b>
+        <b><a href="#process">Process</a></b>
+        <a href="#hifi">1.Hi-fi design</a>
+        <a href="#functions">2.The functions</a>
+        <b><a href="#conclusion">Conclusion</a></b>
+
+    </div>
+    <!-- Use any element to open the sidenav -->
+    <button onclick="openNav()" id="toContent" title="Go to content">Content</button>
     <!-- Navbar -->
     <nav class="navbar navbar-default">
         <div class="container">
@@ -24,11 +36,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand">🐟ANXIOUS FISH</a>
+                <a class="navbar-brand" href="index.html">🐟ANXIOUS FISH</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">HOME</a></li>
                     <li><a href="index.html">ABOUT</a></li>
                     <li><a href="index.html#works">WORK</a></li>
                     <li><a href="index.html#contact">CONTACT</a></li>
@@ -39,20 +50,21 @@
 
     <div class="container-fluid bg-1 text-center">
         <h1>REACT website</h1>
+        <p>Individual work</p>
+
         <a href="https://anxiousfish745.github.io/react/">The link to the orginal REACT website</a>
 
     </div>
     <div class="container-fluid bg-2">
-        <h2>Context and Purpose</h2>
-        <p style="padding: 1%">This is a small experimental web project based on react and 
-            bootstrap. This web page tries to mimic a basic shopping software: 
-            users can browse and buy the items they want by filtering and sorting them, 
+        <h2 id="context">Context and Purpose</h2>
+        <p style="padding: 1%">This is a small experimental web project based on react and
+            bootstrap. This web page tries to mimic a basic shopping software:
+            users can browse and buy the items they want by filtering and sorting them,
             and they can also remove items from their shopping cart.</p>
-        <h2>Process</h2>
-        <h3>Hi-fi design</h3>
-        <img src="images/reacthifi.jpg" class="image" alt="react hifi"
-        style="margin-left: 10%; width: 60%;">
-        <h3>The functions</h3>
+        <h2 id="process">Process</h2>
+        <h3 id="hifi">Hi-fi design</h3>
+        <img src="images/reacthifi.jpg" class="image" alt="react hifi" style="margin-left: 10%; width: 60%;">
+        <h3 id="functions">The functions</h3>
         <div class="row">
             <div class="col-sm-4">
                 <p>In this bakery store website, the user can choose to use the filter/sort at the left side.</p>
@@ -62,39 +74,49 @@
                     <li>Sort by default setting (popularity)</li>
                     <li>Sory by price(low - high) or (high - low)</li>
                 </ul>
-                
+
             </div>
             <div class="col-sm-8">
-                <img src="images/react1.jpg" width="95%" >
-                <hr> 
+                <img src="images/react1.jpg" width="95%">
+                <hr>
             </div>
         </div>
-            
-            <div class="row">
-                <div class="col-sm-4">
-                    <p>The users can also add/delete/reset the items in their cart.</p>
-                </div>
-                <div class="col-sm-8">
-                    <img src="images/react2.jpg" width="95%" >
-    
-                </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <p>The users can also add/delete/reset the items in their cart.</p>
+            </div>
+            <div class="col-sm-8">
+                <img src="images/react2.jpg" width="95%">
+
+            </div>
         </div>
 
 
-        <h4><b>✨Some Afterthoughts✨</b></h4>
-        <p>Although I didn't spend much time on making the page more responsive based on the 
-            project's goals (getting familiar with and using react and bootstrap), I think there's 
-            still a lot of room for improvement. For example, on my monitor (24"), the menu is a 
-            bit too loose between each item (I designed it with 2 columns), which may distract the 
-            user's attention and is not conducive to uniformity of eye movement. Also, I didn't have 
-            time to create the feedback part of the "check out" button because of time constraints. 
-            Hopefully I would continue working on that!</p>
+        <h2 id="conclusion">✨Conslusion & Afterthoughts✨</h2>
+        <ul>
+            <li>PROBLEM</li>
+            <p> Creating a static web page is not so hard,
+                but interacting with users and implementing some features requires additional learning. This project
+                aims to solve some functional problems.</p>
+            <li>GOAL</li>
+            <P>This project is a small experiment for me to try REACT and bootstrap for the first time.</P>
+            <li>DISCUSSION</li>
+            <p>Although I didn't spend much time on making the page more responsive based on the
+                project's goals (getting familiar with and using react and bootstrap), I think there's
+                still a lot of room for improvement. For example, on my monitor (24"), the menu is a
+                bit too loose between each item (I designed it with 2 columns), which may distract the
+                user's attention and is not conducive to uniformity of eye movement. Also, I didn't have
+                time to create the feedback part of the "check out" button because of time constraints.
+                Hopefully I would continue working on that!</p>
+        </ul>
+
 
 
     </div>
     <a href="https://anxiousfish745.github.io/react/">The link to the orginal REACT website</a>
 
-    
+
     <button onclick="topFunction()" id="toTop" title="Go to top">Top</button>
     <!-- Footer -->
     <footer class="container-fluid bg-4 text-center">

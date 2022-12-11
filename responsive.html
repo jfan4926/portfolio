@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Theme Made By www.w3schools.com - No Copyright -->
     <title>Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +13,21 @@
 </head>
 
 <body>
+    <!-- side nav -->
+    <!-- https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <b><a href="#context">Context and Purpose</a></b>
+        <b><a href="#process">Process</a></b>
+        <a href="#interface">1.Interface Analysis</a>
+        <a href="#visual">2.Visual Redesign</a>
+        <a href="#final">3.Final Responsive Redesign</a>
+        <b><a href="#conclusion">Conclusion</a></b>
+
+    </div>
+    <!-- Use any element to open the sidenav -->
+    <button onclick="openNav()" id="toContent" title="Go to content">Content</button>
 
     <!-- Navbar -->
     <nav class="navbar navbar-default">
@@ -24,11 +38,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand">🐟ANXIOUS FISH</a>
+                <a class="navbar-brand" href="index.html">🐟ANXIOUS FISH</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">HOME</a></li>
                     <li><a href="index.html">ABOUT</a></li>
                     <li><a href="index.html#works">WORK</a></li>
                     <li><a href="index.html#contact">CONTACT</a></li>
@@ -39,38 +52,44 @@
 
     <div class="container-fluid bg-1 text-center">
         <h1>RESPONSIVE DESIGN</h1>
+        <p>Individual work</p>
+
     </div>
     <div class="container-fluid bg-2">
-        <h2>Context and Purpose</h2>
-        <p style="padding: 1%">Looking back, as a Gen Z kid, I would use 🤙 this gesture for making a phone call, 
-            while the Gen Alpha kids are more familiar with the way smartphones works. 
-            The same goes for user design - times are changing and we as designers must change accordingly. 
-            We also have to admit that sometimes the exsiting interface is not very user-friendly in either usability, responsiveness or aesthetics aspects. 
-            From the user's perspective, 
-            the designer needs to create a product that will display and function properly (at least) most of the time - 
+        <h2 id="context">Context and Purpose</h2>
+        <p style="padding: 1%">Looking back, as a Gen Z kid, I would use 🤙 this gesture for making a phone call,
+            while the Gen Alpha kids are more familiar with the way smartphones works.
+            The same goes for user design - times are changing and we as designers must change accordingly.
+            We also have to admit that sometimes the exsiting interface is not very user-friendly in either usability,
+            responsiveness or aesthetics aspects.
+            From the user's perspective,
+            the designer needs to create a product that will display and function properly (at least) most of the time -
             regardless of the size of the display and the type of device.<br>
-           <br>
-            Therefore, this project aims to design and build a responsive website based on low-fidelity and high-fidelity prototypes of an existing interface.</p>
-            
-        <h2>Process</h2>
-        <p>I picked <a href="https://www.sakispizza.com/">Sakis Pizza</a> 
-            because I think it is "simple yet poorly-designed": 
-            It is a simple website for a family-owned pizzeria, which basically shows its location, menu, introduction, and pictures.</p>
-            
-        <h3>Interface Analysis</h3>
+            <br>
+            Therefore, this project aims to design and build a responsive website based on low-fidelity and
+            high-fidelity prototypes of an existing interface.
+        </p>
+
+        <h2 id="process">Process</h2>
+        <p>I picked <a href="https://www.sakispizza.com/">Sakis Pizza</a>
+            because I think it is "simple yet poorly-designed":
+            It is a simple website for a family-owned pizzeria, which basically shows its location, menu, introduction,
+            and pictures.</p>
+
+        <h3 id="interface">Interface Analysis</h3>
         <div class="row">
             <div class="col-sm-6">
-        <ul> 
-            <h4>Usability:</h4>
-            <li>Menu- hard to spot on large devices.</li>
-            <li>Hard to spot important information</li>
-            <li>Low font color contrast</li>
-            <li>Misaligned paragraph</li>
-            <li>Gallery pictures do not have proper labels</li>
-            <li>Empty white region</li>
-            <li>Misplaced facebook link</li>
-        
-        </ul>
+                <ul>
+                    <h4>Usability:</h4>
+                    <li>Menu- hard to spot on large devices.</li>
+                    <li>Hard to spot important information</li>
+                    <li>Low font color contrast</li>
+                    <li>Misaligned paragraph</li>
+                    <li>Gallery pictures do not have proper labels</li>
+                    <li>Empty white region</li>
+                    <li>Misplaced facebook link</li>
+
+                </ul>
             </div>
             <div class="col-sm-6">
                 <h4>Accessibility:</h4>
@@ -89,10 +108,10 @@
         <p>The get help button</p> -->
 
         <h4><b>✨Some Afterthoughts✨</b></h4>
-        <p>Revisiting the analysis of the original site again, 
-            I felt that there were other things I could discuss - 
+        <p>Revisiting the analysis of the original site again,
+            I felt that there were other things I could discuss -
             such as images, color scheme, overall structure and ease of use for the user.</p>
-        <h3>Visual Redesign</h3>
+        <h3 id="visual">Visual Redesign</h3>
         <h4>Low-fidelity Wireframing - click for larger image</h4>
         <div class="row">
             <div class="col-sm-4">
@@ -108,16 +127,17 @@
         <!-- https://www.w3schools.com/howto/howto_css_modal_images.asp -->
         <!-- https://stackoverflow.com/questions/47798971/several-modal-images-on-page -->
         <div id="myModal" class="modal">
-          <span class="close">&times;</span>
-          <img class="modal-content" id="img01">
-          <div id="caption"></div>
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
         </div>
-        <p><b>Thoughts and comments:</b> <br>Since this is a pizzeria website, the biggest function is to quickly show their location, opening hours, 
-            contact information and menu. In order to present it as simple as possible, 
+        <p><b>Thoughts and comments:</b> <br>Since this is a pizzeria website, the biggest function is to quickly show
+            their location, opening hours,
+            contact information and menu. In order to present it as simple as possible,
             I created a one-page website and tried to put the important information in the most prominent position.</p>
         <h4>Visual design style guide</h4>
         <img src="images/visual.png" class="img-responsive margin" alt="Image" style="width: 50%">
-        <h4>High-Fidelity Prototyping  - click for larger image</h4>
+        <h4>High-Fidelity Prototyping - click for larger image</h4>
         <div class="row">
             <div class="col-sm-4">
                 <img class="myImages" id="myImg" src="images/himob.png" style="width:100%;max-width:200px">
@@ -130,91 +150,118 @@
             </div>
         </div>
         <div>
-            <h4 style = "padding: 2%;">Annotations:</h4>
+            <h4 style="padding: 2%;">Annotations:</h4>
             <ol>
-              <li>
-                <b>Menu problem: </b><p>For the container of the "menu" background, I use position: relative; 
-                so that I can keep a relative position with the button.</p>
-              </li>
-              <li>
-                <b>Responsiveness: </b><br><p>I used display: block for each div because there are not many 
-                flex elements required (besides the gallery and the later info images, 
-                for which I use the row and column to adjust them better accordingly). <br>
-                I'm using rem font size for h1, h2, and h3 so that they're relative to the 
-                root element and responsive on different device sizes while 
-                maintaining proper text hierarchy.<br>
-                For side-by-side elements, such as the image and text in location & hours, 
-                I used the float:left and right. I also adjusted the margin for a 
-                better appearance.</p>
-              </li>
-              <li>
-                <b>Gallery display: </b><br><p>I adjusted the image sizes so that they will align better in the gallery. 
-                    For the gallery layout, I referred to 
-                    <a href="https://www.w3schools.com/HOWTO/howto_css_team.asp">w3schools</a>
-                    for the alignment and 
-                    display.</p>
-              </li>
-              <li>
-                <b>Other problems: Alt text; text font, contrast and size; paragraph alignment</b> <br><p>I have adjusted
-                them accordingly. See the redesigned website for more details.</p>
-              </li>
-              <li>
-                There are interactive elements on the page, though not many.
-                <ul>
-                  <li>
+                <li>
                     <b>Menu problem: </b>
-                    <p>When hovering above the menu button, its color changes and 
-                    implies that it is clickable; when clicked, it links to the menu 
-                    pdf file.</p>
-                  </li>
-                  <li>
-                    <b>Find improtant information: </b>
-                    <p>When scrolling down, the “top” button appears on the right side. 
-                    I used a little Javascript here 
-                    (credit to 
-                    <a href="https://www.w3schools.com/HOWTO/howto_js_scroll_to_top.asp">w3schools.</a>)</p>
-                  </li>
-                  <li>
-                    <b>Misplaced Facebook link: </b>
-                    <p>have also linked the Facebook like button at the bottom, 
-                    which is clickable. The code is from 
-                    <a href="https://developers.facebook.com/docs/plugins/like-button"> Facebook.</a></p> 
-                  </li>
-                  <li>
-                    <p>I initially wanted to use a navigation bar at the top/side, but since the original 
-                    website is relatively simple with only a few elements(menu, info, gallery and about us), I decided to discard the navigation bar.</p>
-                  </li>
-                </ul>
-                <p>Many thanks to w3schools! I would not have finished it without its amazing tutorials :')</p>
-              </li>
-            </ol> 
-          </div>
+                    <p>For the container of the "menu" background, I use position: relative;
+                        so that I can keep a relative position with the button.</p>
+                </li>
+                <li>
+                    <b>Responsiveness: </b><br>
+                    <p>I used display: block for each div because there are not many
+                        flex elements required (besides the gallery and the later info images,
+                        for which I use the row and column to adjust them better accordingly). <br>
+                        I'm using rem font size for h1, h2, and h3 so that they're relative to the
+                        root element and responsive on different device sizes while
+                        maintaining proper text hierarchy.<br>
+                        For side-by-side elements, such as the image and text in location & hours,
+                        I used the float:left and right. I also adjusted the margin for a
+                        better appearance.</p>
+                </li>
+                <li>
+                    <b>Gallery display: </b><br>
+                    <p>I adjusted the image sizes so that they will align better in the gallery.
+                        For the gallery layout, I referred to
+                        <a href="https://www.w3schools.com/HOWTO/howto_css_team.asp">w3schools</a>
+                        for the alignment and
+                        display.
+                    </p>
+                </li>
+                <li>
+                    <b>Other problems: Alt text; text font, contrast and size; paragraph alignment</b> <br>
+                    <p>I have adjusted
+                        them accordingly. See the redesigned website for more details.</p>
+                </li>
+                <li>
+                    There are interactive elements on the page, though not many.
+                    <ul>
+                        <li>
+                            <b>Menu problem: </b>
+                            <p>When hovering above the menu button, its color changes and
+                                implies that it is clickable; when clicked, it links to the menu
+                                pdf file.</p>
+                        </li>
+                        <li>
+                            <b>Find improtant information: </b>
+                            <p>When scrolling down, the “top” button appears on the right side.
+                                I used a little Javascript here
+                                (credit to
+                                <a href="https://www.w3schools.com/HOWTO/howto_js_scroll_to_top.asp">w3schools.</a>)
+                            </p>
+                        </li>
+                        <li>
+                            <b>Misplaced Facebook link: </b>
+                            <p>have also linked the Facebook like button at the bottom,
+                                which is clickable. The code is from
+                                <a href="https://developers.facebook.com/docs/plugins/like-button"> Facebook.</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>I initially wanted to use a navigation bar at the top/side, but since the original
+                                website is relatively simple with only a few elements(menu, info, gallery and about us),
+                                I decided to discard the navigation bar.</p>
+                        </li>
+                    </ul>
+                    <p>Many thanks to w3schools! I would not have finished it without its amazing tutorials :')</p>
+                </li>
+            </ol>
+        </div>
 
-        <h2>Final Responsive Redesign</h2>
-        <h3>Link:<a href="https://anxiousfish745.github.io/ResponsiveRedesign/redesign-sakispizza.html">Sakis Pizza</a></h3>
+        <h3 id="final">Final Responsive Redesign</h3>
+        <h3>Link:<a href="https://anxiousfish745.github.io/ResponsiveRedesign/redesign-sakispizza.html">Sakis Pizza</a>
+        </h3>
         <p><b>Please note</b> that the actual phone layout is different from the low-fi and hi-fi prototypes. <br>
-            I originally wanted to have the gallery with <b>one</b> image each row, 
-            but it seems that the gallery would be a little too long and the 
+            I originally wanted to have the gallery with <b>one</b> image each row,
+            but it seems that the gallery would be a little too long and the
             user would have to scroll for quite a long time.And the display works well for <b>two</b>
             images at the same time, so I decided to keep the layout design with
-            two images instead of one with different device sizes.<p>
-        <h4><b>✨Some Afterthoughts✨</b></h4>
-        <p>In hindsight, because of my unfamiliarity with html and css, this early work of mine still looks slightly immature. 
-            One of the biggest purposes of this page - to be responsive on all display devices - was not done well enough. 
-            For example, the font may be a bit too small on handheld devices. Now I may choose to use more external resources, 
-            such as bootstrap, to make the whole page more neatly displayed. Also I may use inline pdf to display the menu, 
-            rather than jumping to an external page to open the pdf file. I'll also be more careful with some of the color schemes and fonts - 
-            although my intention was to keep the color scheme of the original site (orange and black), it's still not quite as good as it could be.</p>
+            two images instead of one with different device sizes.
+        <p>
+        <h2 id="conclusion">✨Conslusion & Afterthoughts✨</h2>
+        <ul>
+            <li>PROBLEM</li>
+            <p> Sometimes web pages only work in a specific display, which might be problematic.</p>
+            <li>GOAL</li>
+            <P>This project is to solve the problem of displaying the content properly in each display device.</P>
+            <li>DISCUSSION</li>
+            <p>In hindsight, because of my unfamiliarity with html and css, this early work of mine still looks slightly
+                immature.
+                One of the biggest purposes of this page - to be responsive on all display devices - was not done well
+                enough.
+                For example, the font may be a bit too small on handheld devices. Now I may choose to use more external
+                resources,
+                such as bootstrap, to make the whole page more neatly displayed. Also I may use inline pdf to display
+                the
+                menu,
+                rather than jumping to an external page to open the pdf file. I'll also be more careful with some of the
+                color schemes and fonts -
+                although my intention was to keep the color scheme of the original site (orange and black), it's still
+                not
+                quite as good as it could be.</p>
+
+        </ul>
 
 
-        <a href="https://anxiousfish745.github.io/ResponsiveRedesign/">The link to the orginal responsive redesign website</a>
+        <a href="https://anxiousfish745.github.io/ResponsiveRedesign/">The link to the orginal responsive redesign
+            website</a>
 
     </div>
-    
+
     <button onclick="topFunction()" id="toTop" title="Go to top">Top</button>
     <!-- Footer -->
     <footer class="container-fluid bg-4 text-center">
-        <p>Made by xxx</p>
+        <p>Made by anxiousfish745</p>
     </footer>
 
 </body>

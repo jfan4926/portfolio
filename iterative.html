@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Theme Made By www.w3schools.com - No Copyright -->
     <title>Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +13,22 @@
 </head>
 
 <body>
+    <!-- side nav -->
+    <!-- https://www.w3schools.com/howto/howto_js_sidenav.asp -->
 
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <b><a href="#context">Context and Purpose</a></b>
+        <b><a href="#process">Process</a></b>
+        <a href="#sketch">1.Sketching & Wireframing</a>
+        <a href="#mockup">2.Mockups</a>
+        <a href="#user">3.User Testing</a>
+        <a href="#justify">4.Justify our design decisions</a>
+        <b><a href="#conclusion">Conclusion</a></b>
+
+    </div>
+    <!-- Use any element to open the sidenav -->
+    <button onclick="openNav()" id="toContent" title="Go to content">Content</button>
     <!-- Navbar -->
     <nav class="navbar navbar-default">
         <div class="container">
@@ -24,11 +38,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand">🐟ANXIOUS FISH</a>
+                <a class="navbar-brand" href="index.html">🐟ANXIOUS FISH</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">HOME</a></li>
                     <li><a href="index.html">ABOUT</a></li>
                     <li><a href="index.html#works">WORK</a></li>
                     <li><a href="index.html#contact">CONTACT</a></li>
@@ -39,9 +52,11 @@
 
     <div class="container-fluid bg-1 text-center">
         <h1>ITERATIVE DESIGN</h1>
+        <p>Group work</p>
+
     </div>
     <div class="container-fluid bg-2">
-        <h2>Context and Purpose</h2>
+        <h2 id="context">Context and Purpose</h2>
         <p>This is a group work.
             We designed and produced our own version of an app developed
             by a startup with the concept and goals in mind, and summarized
@@ -55,7 +70,7 @@
             get ourselves into that come to light, thus allowing us to better find possibilities for improvement.
         </p>
 
-        <h2>Process</h2>
+        <h2 id="process">Process</h2>
         <div class="row">
             <div class="col-sm-6">
                 <img src="images/Dropezy-screenshot.jpeg" class="image" alt="Dropezy app screenshot"
@@ -94,7 +109,7 @@
                 </ul>
             </div>
         </div>
-        <h3>Part 1: Sketching & Wireframing</h3>
+        <h3 id="sketch">Part 1: Sketching & Wireframing</h3>
         <div class="row">
             <div class="col-sm-6">
                 <p>A</p>
@@ -129,7 +144,7 @@
             app, increasing customer stickiness.
         </p>
 
-        <h3>Part 2: Mockups</h3>
+        <h3 id="mockup">Part 2: Mockups</h3>
         <h4 class="h4-category">Original version before studio Critique:</h4>
 
         <!--Todo: naming, using normal-text just for margin issue-->
@@ -137,14 +152,14 @@
         <div class="row">
             <div class="col-sm-6">
                 <iframe class="figma" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="400" height="750"
-                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYXwy5aUyAvKFho3SI9Tkem%2FDropezy-Before-Studio-Crit%3Fnode-id%3D1%253A2%26starting-point-node-id%3D1%253A2"
-                allowfullscreen></iframe>
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYXwy5aUyAvKFho3SI9Tkem%2FDropezy-Before-Studio-Crit%3Fnode-id%3D1%253A2%26starting-point-node-id%3D1%253A2"
+                    allowfullscreen></iframe>
             </div>
             <div class="col-sm-6">
                 <h4 class="h4-category">Summary of studio critique feedback:</h4>
 
                 <div class="screenshot">
-                    <img src="images/studio_crit.png" width="90%" >
+                    <img src="images/studio_crit.png" width="90%">
                 </div>
             </div>
         </div>
@@ -157,12 +172,12 @@
                 src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FbJrjX1MZHzA5LWkaEUb6Jq%2FDropezy-After-Studio-Crit%3Fnode-id%3D1%253A2%26scaling%3Dmin-zoom%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2"
                 allowfullscreen></iframe>
         </div>
-        <h3>Part 3: User Testing</h3>
+        <h3 id="user">Part 3: User Testing</h3>
         <p> Using our newly created, interactive interface, we conduct our usability test
             through a remote user testing service <a href="https://www.usertesting.com/">UserTesting.com</a>.
             Below are the tasks we assigned to the users and our intentions.
         </p>
-        <img src="images/Tasks.png" width="60%" >
+        <img src="images/Tasks.png" width="60%">
 
         <h4 class="h4-category">User Testing Videos:</h4>
 
@@ -170,21 +185,21 @@
             The following video demonstrates how three users interacted with our interface and the feedback they gave.
         </p>
         <div class="screenshot">
-                <h5 class="h5-category">User A</h5>
-                <iframe class="video" src="https://drive.google.com/file/d/1dF_1HTLY6fJzJhu62bI5W3bYCkOM-rp3/preview"
-                    width="640" height="480" allow="autoplay"></iframe>
+            <h5 class="h5-category">User A</h5>
+            <iframe class="video" src="https://drive.google.com/file/d/1dF_1HTLY6fJzJhu62bI5W3bYCkOM-rp3/preview"
+                width="640" height="480" allow="autoplay"></iframe>
         </div>
         <div class="screenshot">
-                <h5 class="h5-category">User B</h5>
-                <iframe class="video" src="https://drive.google.com/file/d/1ZnAcjjSitf_PNxVeHORQYAeMZ7MXRMAb/preview"
-                    width="640" height="480" allow="autoplay"></iframe>
+            <h5 class="h5-category">User B</h5>
+            <iframe class="video" src="https://drive.google.com/file/d/1ZnAcjjSitf_PNxVeHORQYAeMZ7MXRMAb/preview"
+                width="640" height="480" allow="autoplay"></iframe>
         </div>
 
         <div class="screenshot">
-                <h5 class="h5-category">User C</h5>
+            <h5 class="h5-category">User C</h5>
 
-                <iframe class="video" src="https://drive.google.com/file/d/1pFNFdgEMh_2BVrPCnA3lUXYIFcG7qAVb/preview"
-                    width="640" height="480" allow="autoplay"></iframe>
+            <iframe class="video" src="https://drive.google.com/file/d/1pFNFdgEMh_2BVrPCnA3lUXYIFcG7qAVb/preview"
+                width="640" height="480" allow="autoplay"></iframe>
         </div>
         <h4 class="h4-category">Analysis:</h4>
 
@@ -193,83 +208,104 @@
             from them.
         </p>
 
-            <img src="images/Analysis.png" alt="User Testing Analysis" width="50%">
-            <h5 class="h5-category">Summary</h5>
+        <img src="images/Analysis.png" alt="User Testing Analysis" width="50%">
+        <h5 class="h5-category">Summary</h5>
 
-            <p style="margin-bottom:2%; margin-top:2%">We have three users showing quite different results. The first
-                user performed okay with our prototyping. The second user, as an experienced grocery shopping app user,
-                performed almost perfect as we expected.
-                The third user encountered the most problems. All of them made valuable suggestions to our prototyping.
-            </p>
-
-            <p><b>Things we didn't expect:</b></p>
-            <ul style="margin-bottom:2%">
-                <li>When users were assigned to purchase a specific item, all of them first chose to try out the search
-                    bar.
-                    Although some items were displayed on the main pages, they did not first check if their target items
-                    were on the main page.</li>
-                <li>Our users clicked the add button twice to add two items to the cart. We expected users to first add
-                    the item to the cart,
-                    then adjust the number of items they want on the cart page.</li>
-                <li>It may be because of the order we assigned the tasks, users tried to navigate from the recipe page
-                    directly to the follower page.</li>
-                <li>When users navigated to the recipe page, all of them used the click button instead of swiping the
-                    screen to the recipe page.</li>
-                <li>One user tried to find the salmon recipe in the shopping section for seafood, which showed that the
-                    idea of community is not that intuitive to users.</li>
-                <li>Only one user realized that the follow button could be clicked.</li>
-            </ul>
-
-
-            <p><b>Things we can improve:</b></p>
-            <ul style="margin-bottom:2%">
-                <li>When the app is fully functional, we can solve the problems with the search bar and the "like/add to
-                    saved item" button on the home page.</li>
-                <li>We can implement better navigation for the community section. Clicking the Community button should
-                    link back to the community's main page.</li>
-                <li>We should allow the user to double-click to add items twice.</li>
-                <li>We should show the number of items added to the cart on the home/category page and also allow users
-                    to modify the number of items added to the cart.</li>
-                <li>We can think about a better "+follow" button so that more people can understand how to use it.</li>
-            </ul>
-
-
-        <h3>Part 4:Justify our design decisions </h3>
-        <p>
-            Our design strives to <b>achieve the company's original goals</b>, making Dropezy a <b>convenient and accessible</b> delivery tool and a <b>community</b> that cares. 
-            The cart page clearly layouts the taxes, shipping costs, and total prices, which guarantees <b>transparency</b>. 
-            We designed a favorite list, which allows users to <b>save time and effort</b> finding the item they want. 
-            A community feature allows users to share their shopping experience, find good recipes from influencers and discuss the hottest topics. 
-            Thus, Dropezy can better hear the voice of the users, select its products, and develop strategies to meet their <b>daily</b> needs. 
+        <p style="margin-bottom:2%; margin-top:2%">We have three users showing quite different results. The first
+            user performed okay with our prototyping. The second user, as an experienced grocery shopping app user,
+            performed almost perfect as we expected.
+            The third user encountered the most problems. All of them made valuable suggestions to our prototyping.
         </p>
 
-            <p>We implement interaction principles from three aspects:</p>
-            <ul>
-                <li><b>Interaction</b> 
-                    <p>We kept users informed about their interactions with the interface by providing visual feedback. For example, we included overlays to display confirmation messages when users add items to their carts or check out their carts, so that users can know if their interaction with the interface is successful.</p>
-                </li>
-                <li><b>Navigation</b>
-                    <p>We obtained user navigation accessibility in the interface.To maintain continuity, we added color to the bottom navigation bar to indicate what page users are on, and used clear indications to help users understand their destination and direction. Likewise, we included both swipes and clicks for the community page, making it more mobile-friendly.</p>
-                </li>
-                <li><b>Hierarchy</b> 
-                    <p>We kept the interface's overall clear and structured hierarchy. We applied design elements such as colors, fonts, grids, and shadow effects to indicate the hierarchy of the interface.
-                    </p>
-                </li>
-            </ul>
+        <p><b>Things we didn't expect:</b></p>
+        <ul style="margin-bottom:2%">
+            <li>When users were assigned to purchase a specific item, all of them first chose to try out the search
+                bar.
+                Although some items were displayed on the main pages, they did not first check if their target items
+                were on the main page.</li>
+            <li>Our users clicked the add button twice to add two items to the cart. We expected users to first add
+                the item to the cart,
+                then adjust the number of items they want on the cart page.</li>
+            <li>It may be because of the order we assigned the tasks, users tried to navigate from the recipe page
+                directly to the follower page.</li>
+            <li>When users navigated to the recipe page, all of them used the click button instead of swiping the
+                screen to the recipe page.</li>
+            <li>One user tried to find the salmon recipe in the shopping section for seafood, which showed that the
+                idea of community is not that intuitive to users.</li>
+            <li>Only one user realized that the follow button could be clicked.</li>
+        </ul>
 
-        <h4><b>✨Some Afterthoughts✨</b></h4>
-        <p>As I insisted at the beginning and throughout my portfolio, 
-            a clean and effective design was my preferred goal. 
-            I had some disagreements with other teammates on the design of this project, 
-            such as the introduction of social features, but in the end I accepted the design 
-            for various reasons. I try to emphasize the importance of simplicity in my team work - 
-            so that users always know where they are, what they are doing, what they want to do, 
-            and what they can do - and this kind of goal-oriented design is very important for a 
-            fast-paced shopping software.
-            If it were my own work, I would probably further simplify the social module and user 
-            settings interface, as well as reduce the number of steps required for users to search for items. 
-            Although this work is still a naive, I still enjoy the fun of teamwork and the new inspiration 
-            that comes from the clash of ideas.</p>
+
+        <p><b>Things we can improve:</b></p>
+        <ul style="margin-bottom:2%">
+            <li>When the app is fully functional, we can solve the problems with the search bar and the "like/add to
+                saved item" button on the home page.</li>
+            <li>We can implement better navigation for the community section. Clicking the Community button should
+                link back to the community's main page.</li>
+            <li>We should allow the user to double-click to add items twice.</li>
+            <li>We should show the number of items added to the cart on the home/category page and also allow users
+                to modify the number of items added to the cart.</li>
+            <li>We can think about a better "+follow" button so that more people can understand how to use it.</li>
+        </ul>
+
+
+        <h3 id="justify">Part 4:Justify our design decisions </h3>
+        <p>
+            Our design strives to <b>achieve the company's original goals</b>, making Dropezy a <b>convenient and
+                accessible</b> delivery tool and a <b>community</b> that cares.
+            The cart page clearly layouts the taxes, shipping costs, and total prices, which guarantees
+            <b>transparency</b>.
+            We designed a favorite list, which allows users to <b>save time and effort</b> finding the item they want.
+            A community feature allows users to share their shopping experience, find good recipes from influencers and
+            discuss the hottest topics.
+            Thus, Dropezy can better hear the voice of the users, select its products, and develop strategies to meet
+            their <b>daily</b> needs.
+        </p>
+
+        <p>We implement interaction principles from three aspects:</p>
+        <ul>
+            <li><b>Interaction</b>
+                <p>We kept users informed about their interactions with the interface by providing visual feedback. For
+                    example, we included overlays to display confirmation messages when users add items to their carts
+                    or check out their carts, so that users can know if their interaction with the interface is
+                    successful.</p>
+            </li>
+            <li><b>Navigation</b>
+                <p>We obtained user navigation accessibility in the interface.To maintain continuity, we added color to
+                    the bottom navigation bar to indicate what page users are on, and used clear indications to help
+                    users understand their destination and direction. Likewise, we included both swipes and clicks for
+                    the community page, making it more mobile-friendly.</p>
+            </li>
+            <li><b>Hierarchy</b>
+                <p>We kept the interface's overall clear and structured hierarchy. We applied design elements such as
+                    colors, fonts, grids, and shadow effects to indicate the hierarchy of the interface.
+                </p>
+            </li>
+        </ul>
+
+        <h2 id="conclusion">✨Conslusion & Afterthoughts✨</h2>
+        <ul>
+            <li>PROBLEM</li>
+            <p> A single design does not always bring users a satisfactory user experience; sometimes the design would
+                even go to a totally wrong direction. </p>
+            <li>GOAL</li>
+            <P>The goal of this project is to improve iterative design and to conduct user testing in order to achieve
+                better results.</P>
+            <li>DISCUSSION</li>
+            <p>As I insisted at the beginning and throughout my portfolio,
+                a clean and effective design was my preferred goal.
+                I had some disagreements with other teammates on the design of this project,
+                such as the introduction of social features, but in the end I accepted the design
+                for various reasons. I try to emphasize the importance of simplicity in my team work -
+                so that users always know where they are, what they are doing, what they want to do,
+                and what they can do - and this kind of goal-oriented design is very important for a
+                fast-paced shopping software.
+                If it were my own work, I would probably further simplify the social module and user
+                settings interface, as well as reduce the number of steps required for users to search for items.
+                Although this work is still a naive, I still enjoy the fun of teamwork and the new inspiration
+                that comes from the clash of ideas.</p>
+        </ul>
+
 
 
         <a href="https://happydoggie666.github.io/Iterative-Design/#">The link to the orginal responsive redesign
@@ -280,7 +316,7 @@
     <button onclick="topFunction()" id="toTop" title="Go to top">Top</button>
     <!-- Footer -->
     <footer class="container-fluid bg-4 text-center" id="contact">
-        <p>Made by xxx</p>
+        <p>Made by anxiousfish745</p>
     </footer>
 
 </body>

@@ -18,7 +18,7 @@
     <!-- Navbar -->
 
     <nav class="navbar navbar-default">
-        <div class="container">
+        <!-- <div class="container"> -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
@@ -34,7 +34,7 @@
                     <li><a href="index.html#contact">CONTACT</a></li>
                 </ul>
             </div>
-        </div>
+        <!-- </div> -->
     </nav>
 
     <!-- First Container -->
@@ -143,17 +143,28 @@
     <!-- Footer -->
     <footer class="container-fluid bg-4 text-center" id="contact">
         <h2 class="margin">Contact</h2>
-        <h4>Email: xxxxx@gmail.com</h4>
-        <h4>linkedin: xxxxxxx</h4>
-        <h4>github: xxxx</h4>
-        <p>Made by anxiousfish745</p>
+        <!-- https://www.w3schools.com/howto/howto_css_contact_form.asp -->
+            <form action="action_page.php" class="container-fluid bg-4 text-center" style="width: 50%">
+          
+              <input type="text" id="fname" name="firstname" placeholder="First name">
+          
+              <input type="text" id="lname" name="lastname" placeholder="Last name">
+          
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+        
         <!-- Add icon library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <a class="fa fa-facebook" href="#"></a>
             <a class="fa fa-twitter" href="#"></a>
             <a class="fa fa-github" href="#"><i class="ri-instagram-line"></i></a>
             <a class="fa fa-linkedin-square" href="#"><i class="ri-youtube-line"></i></a>
-            
+        <p>Made by anxiousfish745</p>
     </footer>
 
 </body>

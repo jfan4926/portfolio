@@ -63,7 +63,7 @@ li{
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #cacfd6;
+    background-color: rgba(0,0,0,70%);
 }
 
 .image {
@@ -83,7 +83,7 @@ li{
 }
 
 .hovertext {
-    color: black;
+    color: white;
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -111,7 +111,7 @@ li{
   }
   
   #toTop:hover {
-    background-color: #cacfd6; /* Add a dark-grey background on hover */
+    background-color: #f2c57c; /* Add a dark-grey background on hover */
   }
 
   /* for model image */
@@ -196,3 +196,7 @@ li{
     }
   }
   /* for model image */
+
+  html{
+    scroll-behavior: smooth;;
+  }
